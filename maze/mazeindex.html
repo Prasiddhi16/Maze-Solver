@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze Solver</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo">🧩</div>
+                <h1>Maze Solver</h1>
+            </div>
+            <p class="tagline">Draw walls, set start and end points, then watch the algorithm find the path!</p>
+        </header>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <!-- Control Panel -->
+            <div class="control-panel">
+                <!-- Drawing Tools -->
+                <div class="section">
+                    <h2>Drawing Tools</h2>
+                    <div class="button-grid">
+                        <button id="wallBtn" class="tool-btn wall-btn active" title="Draw walls">
+                            <span class="btn-icon">▭</span> Wall
+                        </button>
+                        <button id="eraseBtn" class="tool-btn erase-btn" title="Erase walls">
+                            <span class="btn-icon">◯</span> Erase
+                        </button>
+                        <button id="startBtn" class="tool-btn start-btn" title="Set start point">
+                            <span class="btn-icon">⬤</span> Start
+                        </button>
+                        <button id="endBtn" class="tool-btn end-btn" title="Set end point">
+                            <span class="btn-icon">📍</span> End
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Algorithm Selection -->
+                <div class="section">
+                    <h2>Algorithm</h2>
+                    <div class="button-grid">
+                        <button id="dfsBtn" class="algo-btn" title="Depth-First Search">
+                            <span class="btn-icon">⚡</span> DFS
+                        </button>
+                        <button id="bfsBtn" class="algo-btn active" title="Breadth-First Search">
+                            <span class="btn-icon">👥</span> BFS
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Action Buttons -->
+                <button id="solveBtn" class="solve-btn">▶ Solve Maze</button>
+                <button id="clearPathBtn" class="clear-btn">Clear Path</button>
+                <button id="clearAllBtn" class="clear-btn">Clear All</button>
+
+                <!-- Algorithm Description -->
+                <div class="section info-box">
+                    <h3>Breadth-First Search</h3>
+                    <p>BFS explores all neighbors at the current depth before moving to the next level. It uses a queue (FIFO).</p>
+                </div>
+            </div>
+
+            <!-- Canvas Grid -->
+            <div class="grid-container">
+                <div id="grid" class="grid"></div>
+            </div>
+        </div>
+
+        <!-- How to Use Section -->
+        <div class="instructions">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Select a drawing tool (Wall, Erase, Start, or End) from the control panel</li>
+                <li>Click and drag on the grid to draw walls or place start/end points</li>
+                <li>Choose your algorithm: DFS (Depth-First Search) or BFS (Breadth-First Search)</li>
+                <li>Click "Solve Maze" to watch the algorithm find the shortest path</li>
+                <li>Use "Clear Path" to remove the solution or "Clear All" to start over</li>
+            </ol>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

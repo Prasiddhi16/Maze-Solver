@@ -7,20 +7,9 @@ Users can draw walls, set start and end points, and visualize how **Breadth-Firs
 - Draw walls, erase cells, and set start/end points.
 - Choose between **BFS** (shortest path guaranteed) and **DFS** (deep exploration).
 - Animated visualization of search order and final path.
-- Clear/reset options for paths or the entire grid.
-##  Project Structure
-projectpath/ │ 
-├── backend/
-│   └── app.py         
-# Flask server with BFS & DFS logic
-│ ├── frontend/ │ 
-├── index.html     
-# Maze UI │  
-├── style.css      
-# Grid and button styling │ 
-└── script.js      
+- Clear/reset options for paths or the entire grid.    
 
-## 🛠️ Requirements
+##  Requirements
 - Python 3.9+ (tested with Python 3.13)
 - Flask
 - Flask-CORS
